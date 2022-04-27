@@ -1,69 +1,3 @@
- /* * {
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0%;
- }
-
- html {
-     height: 100%;
- }
-
- body {
-     font-family: "public sans", sans-serif;
-     font-size: 1.2rem;
-     min-height: 100%;
- }
-
- .grid-container > * {
-     box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 4px;
-    padding: 10px;
-    text-align: center;
- }
-
- .header {
-    grid-area: header;
-    background-color: #ffe4c4;
- }
-
-.navbar {
-    grid-area: navbar;
-    background-color: #ffe4c4;
-}
-
-.main {
-    grid-area: main;
-    background-color: #ffe4c4;
-}
-
-.footer {
-    grid-area: footer;
-    background-color: #ffe4c4;
-}
-
-.grid-container {
-    display: grid;
-    gap: 10px;
-    grid-template-areas: 
-    "header"
-    "navbar"
-    "main"
-    "footer";
-}
-
-@media (min-width: 600px) {
-    .grid-container {
-        grid-template-columns: 200px auto;
-        grid-template-rows: 100px 50px auto 100px;
-        grid-template-areas: 
-        "header header"
-        "navbar navbar"
-        "main main"
-        "footer footer";
-    }
-}
-
-*/
 * {
     box-sizing: border-box;
 }
@@ -142,6 +76,7 @@ header a {
     text-decoration: none;
     font-weight: bold;
     color: #ffffff;
+    font-family: 'Mukta', sans-serif;
 }
 
 header a:hover {
@@ -238,6 +173,11 @@ header a:hover {
 
 #caracteristicas ul {
     padding: 0;
+}
+
+.ColumnUsP p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.10em;
 }
 
 #reserva-ahora {
@@ -747,6 +687,11 @@ text-align: start;
 .RowProd li{
     list-style-type: none;
     display: flex;
+    /* height: 180px; */
+}
+
+.RowProd ul li p {
+    font-size: 1em;
 }
 
 .RowProd img{
@@ -811,7 +756,7 @@ text-align: start;
         0deg,
         rgba(0, 0, 0, 0.13),
         rgba(0, 0, 0, 0.089) 
-    ), url("media/macarons5.jpg");
+    ), url("media/macarons6.jpg");
     background-size: cover;
     background-position: center center;
     height: 370px;
@@ -834,6 +779,8 @@ text-align: start;
 
 .gridContainer .ColumnUsP p{
 	margin: 0px;
+    text-align: initial;
+    padding: 10px 50px;
 }
 
 .gridContainer .profesionales,
@@ -853,9 +800,9 @@ text-align: start;
 	grid-area: profesionales;
     background-image:linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.13),
-        rgba(0, 0, 0, 0.089) 
-    ), url("media/cocinando1.jpg");
+        rgba(0, 0, 0, 0.295),
+        rgba(0, 0, 0, 0.295) 
+    ), url("media/macarons1.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -864,14 +811,14 @@ text-align: start;
 	grid-area:instalaciones;
     background-image:linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.13),
-        rgba(0, 0, 0, 0.089) 
-    ), url("media/instalacion1.jpg");
+        rgba(0, 0, 0, 0.295),
+        rgba(0, 0, 0, 0.295) 
+    ), url("media/macarons2.jpg");
     background-size: cover;
     background-position: center center;
 }
 
-@media (min-width: 200px) {
+/* @media (min-width: 200px) {
 
     .gridContainer .ColumnUsP {
         grid-column: 3 / 4;
@@ -909,7 +856,7 @@ text-align: start;
     .gridContainer .profesionales,
     .gridContainer .instalaciones {
 	
-}
+} */
 
 
     /* #nuestros-box-nobanner .boxescarousel {
