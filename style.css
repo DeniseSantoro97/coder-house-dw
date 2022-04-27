@@ -39,11 +39,6 @@ body {
     margin: 0;   
 }
 
-.container {
-    max-width: 1400px;
-    margin: auto;
-}
-
 .color-acento {
     color: #d83f3f;
 }
@@ -194,15 +189,31 @@ header a:hover {
 footer p {
     margin: 0;
     padding: 12;
-    color: #c91b1b;
+    color: #b88cae;
+    -webkit-text-stroke: 1px rgb(255, 155, 155);
+    font-size: 0.8em;
 }
 
 footer .container {
-    height: 50px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    max-width: 1400px;
+    margin: auto;
+}
+
+footer .container ul{
+    text-align: center;
+}
+
+footer .container li{
+    display: inline-block;
+    font-size: 20px;
+    width: 120px;
+    height: 100px;
+}
+
+footer .container img{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
 }
 
 @media (min-width: 720px) {
